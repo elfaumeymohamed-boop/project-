@@ -46,11 +46,12 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)    
 r2 = r2_score(y_test, y_pred)
 print(f'Mean Squared Error: {mse}') 
-print(f'R^2 Score: {r2}')
+print(f'R^2 Score: {r2}')*100
 # Plot actual vs predicted prices   
 plt.scatter(y_test, y_pred)
 plt.xlabel('Actual Prices') 
 plt.ylabel('Predicted Prices')
 plt.title('Actual vs Predicted Prices') 
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)
+
 plt.show()                                                                      
