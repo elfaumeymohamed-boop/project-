@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 data = pd.read_csv('housing.csv')
 # Display first few rows of the dataset
 print(data.head(5))
-# Exploratory Data Visualizatioى
+# Exploratory Data Visualization
 plt.figure(figsize=(8,5))
 plt.hist(data["median_house_value"], bins=50, color="skyblue", edgecolor="black")
 plt.title("Distribution of Median House Value")
@@ -52,4 +52,5 @@ plt.title('Actual vs Predicted Prices')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)
 
 plt.show()                                                                      
+
 
