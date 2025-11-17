@@ -24,10 +24,7 @@ plt.scatter(data["housing_median_age"], data["median_house_value"], alpha=0.3, s
 plt.title("House Value vs Housing Median Age")
 plt.show()
 
-plt.figure(figsize=(8,6))
-plt.scatter(data["longitude"], data["latitude"], alpha=0.2, s=10, color="red")
-plt.title("Geographical Distribution of Houses")
-plt.show()
+
 
 data = data.dropna()  # Remove missing values
 X = data[['longitude', 'latitude', 'housing_median_age', 'total_rooms', 'total_bedrooms', 'population', 'households', 'median_income']]  # Features
@@ -52,5 +49,6 @@ plt.title('Actual vs Predicted Prices')
 plt.plot([y.min(), y.max()], [y.min(), y.max()], 'k--', lw=2)
 
 plt.show()                                                                      
+
 
 
